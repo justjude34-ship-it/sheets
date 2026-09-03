@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07110c"/>
+      <stop offset="100%" stop-color="#123524"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#3ecf8e" stroke-width="2">
+    <path d="M80 180 H1520 M80 260 H1520 M80 340 H1520 M80 420 H1520 M80 500 H1520 M80 580 H1520 M80 660 H1520 M80 740 H1520"/>
+    <path d="M220 140 V780 M400 140 V780 M580 140 V780 M760 140 V780 M940 140 V780 M1120 140 V780 M1300 140 V780"/>
+  </g>
+  <rect x="820" y="170" width="680" height="560" rx="24" fill="#f7fbf8"/>
+  <rect x="820" y="170" width="680" height="64" rx="24" fill="#217346"/>
+  <rect x="820" y="210" width="680" height="24" fill="#217346"/>
+  <text x="1160" y="212" text-anchor="middle" fill="#fff" font-family="Segoe UI, Arial" font-size="28" font-weight="700">Untitled Spreadsheet</text>
+  <g font-family="Segoe UI, Arial" font-size="18" fill="#1a1a1a">
+    <rect x="840" y="250" width="80" height="44" fill="#e8eee9"/><text x="880" y="278" text-anchor="middle">A</text>
+    <rect x="920" y="250" width="140" height="44" fill="#dbeafe"/><text x="990" y="278" text-anchor="middle">Header</text>
+    <rect x="1060" y="250" width="140" height="44" fill="#dcfce7"/><text x="1130" y="278" text-anchor="middle">Income</text>
+    <rect x="1200" y="250" width="140" height="44" fill="#fee2e2"/><text x="1270" y="278" text-anchor="middle">Expense</text>
+    <rect x="1340" y="250" width="140" height="44" fill="#fef9c3"/><text x="1410" y="278" text-anchor="middle">Note</text>
+    <rect x="840" y="294" width="80" height="52" fill="#e8eee9"/><text x="880" y="326" text-anchor="middle">1</text>
+    <rect x="920" y="294" width="140" height="52" fill="#fff"/><text x="990" y="326" text-anchor="middle">Rent</text>
+    <rect x="1060" y="294" width="140" height="52" fill="#dcfce7"/><text x="1130" y="326" text-anchor="middle">4200</text>
+    <rect x="1200" y="294" width="140" height="52" fill="#fee2e2"/><text x="1270" y="326" text-anchor="middle">1850</text>
+    <rect x="1340" y="294" width="140" height="52" fill="#f3e8ff"/><text x="1410" y="326" text-anchor="middle">Due Fri</text>
+    <rect x="840" y="346" width="80" height="52" fill="#e8eee9"/><text x="880" y="378" text-anchor="middle">2</text>
+    <rect x="920" y="346" width="140" height="52" fill="#fff"/><text x="990" y="378" text-anchor="middle">Fuel</text>
+    <rect x="1060" y="346" width="140" height="52" fill="#dcfce7"/><text x="1130" y="378" text-anchor="middle">90</text>
+    <rect x="1200" y="346" width="140" height="52" fill="#fee2e2"/><text x="1270" y="378" text-anchor="middle">64</text>
+    <rect x="1340" y="346" width="140" height="52" fill="#fff"/>
+    <rect x="840" y="398" width="80" height="52" fill="#e8eee9"/><text x="880" y="430" text-anchor="middle">3</text>
+    <rect x="920" y="398" width="140" height="52" fill="#dbeafe"/><text x="990" y="430" text-anchor="middle">Total</text>
+    <rect x="1060" y="398" width="140" height="52" fill="#dcfce7"/><text x="1130" y="430" text-anchor="middle">=SUM(C1:C2)</text>
+    <rect x="1200" y="398" width="140" height="52" fill="#fee2e2"/><text x="1270" y="430" text-anchor="middle">=SUM(D1:D2)</text>
+  </g>
+  <text x="88" y="280" fill="#f4fff8" font-family="Segoe UI, Arial" font-size="92" font-weight="800">SHEETS</text>
+  <text x="92" y="360" fill="#9be7bf" font-family="Segoe UI, Arial" font-size="32">Colour-coded spreadsheet</text>
+  <text x="92" y="430" fill="#d7efe3" font-family="Segoe UI, Arial" font-size="26">Formulas · Save as PDF · Works offline</text>
+  <rect x="92" y="480" width="320" height="52" rx="26" fill="#217346"/>
+  <text x="252" y="514" text-anchor="middle" fill="#fff" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Buy once. Own forever.</text>
+</svg>
