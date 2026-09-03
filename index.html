@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#217346" />
+  <meta name="description" content="Sheets — Excel-like spreadsheet with colour-coded cells and PDF print" />
+  <meta property="og:title" content="Sheets" />
+  <meta property="og:description" content="Colour-code. Calculate. Print to PDF." />
+  <meta property="og:image" content="cover.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon-192.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Sheets</title>
+</head>
+<body>
+  <div id="app">
+    <header id="titlebar">
+      <div class="logo">Sheets</div>
+      <div class="file-name" id="fileName" contenteditable="true" spellcheck="false">Untitled Spreadsheet</div>
+      <div class="header-actions">
+        <button id="darkModeToggle" title="Toggle dark mode">Dark</button>
+        <button id="installBtn" hidden>Install</button>
+      </div>
+    </header>
+    <div id="toolbar">
+      <div class="tool-group">
+        <button id="newBtn">New</button>
+        <button id="exportCsvBtn">CSV</button>
+        <button id="printBtn" class="primary">Save PDF / Print</button>
+      </div>
+      <div class="tool-group">
+        <button id="boldBtn" title="Bold"><b>B</b></button>
+        <button id="italicBtn" title="Italic"><i>I</i></button>
+      </div>
+      <div class="tool-group colors">
+        <label>Fill <input type="color" id="fillColor" value="#ffffff" /></label>
+        <label>Text <input type="color" id="textColor" value="#000000" /></label>
+        <div id="presetColors" class="presets">
+          <div class="preset" data-color="#ffffff" style="background:#ffffff" title="Default"></div>
+          <div class="preset" data-color="#dbeafe" style="background:#dbeafe" title="Header"></div>
+          <div class="preset" data-color="#dcfce7" style="background:#dcfce7" title="Positive / Income"></div>
+          <div class="preset" data-color="#fee2e2" style="background:#fee2e2" title="Negative / Expense"></div>
+          <div class="preset" data-color="#fef9c3" style="background:#fef9c3" title="Highlight"></div>
+          <div class="preset" data-color="#f3e8ff" style="background:#f3e8ff" title="Notes"></div>
+          <div class="preset" data-color="#e5e7eb" style="background:#e5e7eb" title="Gray"></div>
+          <div class="preset" data-color="#ffedd5" style="background:#ffedd5" title="Orange"></div>
+        </div>
+      </div>
+      <div class="tool-group">
+        <button id="addRowBtn">+ Row</button>
+        <button id="addColBtn">+ Col</button>
+        <button id="deleteRowBtn">- Row</button>
+        <button id="deleteColBtn">- Col</button>
+        <button id="clearFmtBtn">Clear Format</button>
+      </div>
+    </div>
+    <div id="formulaBar">
+      <span id="cellRef">A1</span>
+      <input type="text" id="formulaInput" placeholder="Value or formula e.g. =SUM(A1:A5)" spellcheck="false" />
+    </div>
+    <div id="gridContainer"><table id="spreadsheet"></table></div>
+    <footer id="statusBar">
+      <span id="selectionInfo">Ready</span>
+      <span id="calcInfo"></span>
+    </footer>
+  </div>
+  <script src="spreadsheet.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js');
+      });
+    }
+  </script>
+</body>
+</html>
